@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Endless Passwords</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Endless Passwords</div>
+    <div class="search" role="search">
+      <input id="searchInput" type="text" placeholder="Enter password" aria-label="Enter password" />
+      <button id="searchBtn" class="back-to-top" aria-label="Find index">Find</button>
+      <span id="searchResult" class="search-result" aria-live="polite"></span>
+      <input id="numberInput" type="text" placeholder="Jump to # (e.g. 500)" aria-label="Jump to number" />
+      <button id="jumpBtn" class="back-to-top" aria-label="Jump to index">Jump</button>
+      <span id="jumpError" class="search-result" aria-live="polite"></span>
+    </div>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">Top</button>
+  </header>
+  <main id="stream" class="stream"></main>
+  <div id="bottomSentinel" class="sentinel"></div>
+  <script src="script.js"></script>
+</body>
+</html>
